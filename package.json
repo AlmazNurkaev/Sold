@@ -1,9 +1,9 @@
 {
-    "name": "angular-phonecat",
+    "name": "Soldco_app",
     "private": true,
     "version": "0.0.0",
-    "description": "A tutorial application for AngularJS",
-    "repository": "https://github.com/angular/angular-phonecat",
+    "description": "Soldco_app",
+    "repository": "Soldco_app",
     "license": "MIT",
     "devDependencies": {
         "bower": "^1.7.7",
