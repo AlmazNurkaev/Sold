@@ -1,0 +1,13 @@
+<table class="table table-striped">
+    <li ng-repeat="flatx in flatexes" ng-show="soldcoId==flatx.id">
+        <ul ng-controllet="StatusDetailCtrl">
+            <li>Номер квартиры (ID):{{flatx.id}}</li>
+            <li>Номер дома: {{flatx.building}}</li>
+            <li>Имя клиента:<a href="#/name/{{flatx.client.name}}">{{flatx.client.name}}</a>    </li>
+            <li>Площадь помещения:{{flatx.area}}</li>
+            <li ng-repeat="status in statuses" ng-show="status.id==flatx.status">Статус покупки: {{status.name}}</li>
+            <p><a class="btn btn-default" href="#/" role="button">&laquo Вернуться к каталогу</a></p>
+        </ul>
+    </li>
+
+</table>

@@ -1,0 +1,796 @@
+[
+  {
+    "id": 14,
+    "statuses_stages": [
+
+    ],
+    "name": "Рассрочка",
+    "duration": 0,
+    "freeze": true,
+    "classx": "part_payed",
+    "checks": [
+
+    ],
+    "order": 15,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 4,
+    "after": [
+      15,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 12,
+    "statuses_stages": [
+      {
+        "id": 1,
+        "text": "подписание договора застройщиком",
+        "queue": 1,
+        "flat_status": 12
+      },
+      {
+        "id": 2,
+        "text": "подписание договора клиентом",
+        "queue": 2,
+        "flat_status": 12
+      }
+    ],
+    "name": "Оформление",
+    "duration": 7,
+    "freeze": true,
+    "classx": "issuance",
+    "checks": [
+
+    ],
+    "order": 10,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 3,
+    "after": [
+      13,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 28,
+    "statuses_stages": [
+
+    ],
+    "name": "Подрядчик",
+    "duration": 0,
+    "freeze": true,
+    "classx": "contractor",
+    "checks": [
+
+    ],
+    "order": 17,
+    "possible_delay": false,
+    "show_contract": false,
+    "group": 5,
+    "after": [
+      21,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 2,
+    "statuses_stages": [
+
+    ],
+    "name": "Бронь ипотека",
+    "duration": 7,
+    "freeze": true,
+    "classx": "mortgage_brones",
+    "checks": [
+
+    ],
+    "order": 3,
+    "possible_delay": true,
+    "show_contract": false,
+    "group": 1,
+    "after": [
+      16,
+      4,
+      5,
+      6,
+      21,
+      23,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 15,
+    "statuses_stages": [
+
+    ],
+    "name": "Продано",
+    "duration": 0,
+    "freeze": true,
+    "classx": "full_payed",
+    "checks": [
+
+    ],
+    "order": 18,
+    "possible_delay": false,
+    "show_contract": true,
+    "group": 5,
+    "after": [
+      21,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 21,
+    "statuses_stages": [
+
+    ],
+    "name": "Продается",
+    "duration": 0,
+    "freeze": false,
+    "classx": "for_sale",
+    "checks": [
+
+    ],
+    "order": 1,
+    "possible_delay": false,
+    "show_contract": false,
+    "group": 6,
+    "after": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      16,
+      23,
+      29,
+      30,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 1,
+    "statuses_stages": [
+
+    ],
+    "name": "Устная бронь",
+    "duration": 1,
+    "freeze": true,
+    "classx": "oral_brones",
+    "checks": [
+
+    ],
+    "order": 2,
+    "possible_delay": true,
+    "show_contract": false,
+    "group": 1,
+    "after": [
+      2,
+      4,
+      5,
+      6,
+      16,
+      21,
+      23,
+      3,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 16,
+    "statuses_stages": [
+
+    ],
+    "name": "Бронь рассрочка",
+    "duration": 7,
+    "freeze": true,
+    "classx": "installment_brones",
+    "checks": [
+
+    ],
+    "order": 4,
+    "possible_delay": true,
+    "show_contract": false,
+    "group": 1,
+    "after": [
+      2,
+      4,
+      5,
+      6,
+      21,
+      23,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 3,
+    "statuses_stages": [
+
+    ],
+    "name": "Бронь подрядчик",
+    "duration": 7,
+    "freeze": true,
+    "classx": "contactor_brones",
+    "checks": [
+
+    ],
+    "order": 5,
+    "possible_delay": true,
+    "show_contract": false,
+    "group": 1,
+    "after": [
+      12,
+      21,
+      28,
+      4,
+      5,
+      6,
+      23,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 4,
+    "statuses_stages": [
+
+    ],
+    "name": "Резерв оплаченный",
+    "duration": 7,
+    "freeze": true,
+    "classx": "payed_reserve",
+    "checks": [
+
+    ],
+    "order": 6,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 2,
+    "after": [
+      12,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 5,
+    "statuses_stages": [
+
+    ],
+    "name": "Резерв без оплаты",
+    "duration": 7,
+    "freeze": true,
+    "classx": "unpayed_reserve",
+    "checks": [
+
+    ],
+    "order": 7,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 2,
+    "after": [
+      12,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 6,
+    "statuses_stages": [
+
+    ],
+    "name": "Резерв вторичка",
+    "duration": 21,
+    "freeze": true,
+    "classx": "resell_reserve",
+    "checks": [
+
+    ],
+    "order": 8,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 2,
+    "after": [
+      12,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 23,
+    "statuses_stages": [
+
+    ],
+    "name": "Резерв особый",
+    "duration": 7,
+    "freeze": true,
+    "classx": "special_reserve",
+    "checks": [
+
+    ],
+    "order": 9,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 2,
+    "after": [
+      12,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 24,
+    "statuses_stages": [
+
+    ],
+    "name": "Зарегистрирован",
+    "duration": 5,
+    "freeze": true,
+    "classx": "registered",
+    "checks": [
+
+    ],
+    "order": 12,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 3,
+    "after": [
+      27,
+      28,
+      14,
+      15,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 25,
+    "statuses_stages": [
+
+    ],
+    "name": "Приостановка",
+    "duration": 30,
+    "freeze": true,
+    "classx": "pause",
+    "checks": [
+
+    ],
+    "order": 13,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 3,
+    "after": [
+      13,
+      21,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 27,
+    "statuses_stages": [
+
+    ],
+    "name": "Зачет",
+    "duration": 0,
+    "freeze": true,
+    "classx": "swap",
+    "checks": [
+
+    ],
+    "order": 16,
+    "possible_delay": false,
+    "show_contract": false,
+    "group": 5,
+    "after": [
+      21,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 30,
+    "statuses_stages": [
+
+    ],
+    "name": "Снято с продажи",
+    "duration": 0,
+    "freeze": true,
+    "classx": "special",
+    "checks": [
+
+    ],
+    "order": 20,
+    "possible_delay": false,
+    "show_contract": false,
+    "group": 8,
+    "after": [
+      21,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 29,
+    "statuses_stages": [
+
+    ],
+    "name": "Особый статус",
+    "duration": 0,
+    "freeze": true,
+    "classx": "sale_off",
+    "checks": [
+
+    ],
+    "order": 19,
+    "possible_delay": false,
+    "show_contract": false,
+    "group": 7,
+    "after": [
+      21,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 13,
+    "statuses_stages": [
+      {
+        "id": 3,
+        "text": "Приостановка",
+        "queue": 1,
+        "flat_status": 13
+      }
+    ],
+    "name": "На регистрации",
+    "duration": 13,
+    "freeze": true,
+    "classx": "register",
+    "checks": [
+
+    ],
+    "order": 11,
+    "possible_delay": true,
+    "show_contract": true,
+    "group": 3,
+    "after": [
+      24,
+      25,
+      14,
+      12,
+      28,
+      2,
+      15,
+      21,
+      1,
+      16,
+      3,
+      4,
+      5,
+      6,
+      23,
+      24,
+      25,
+      27,
+      30,
+      29,
+      13
+    ]
+  }
+]

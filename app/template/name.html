@@ -1,0 +1,12 @@
+<table>
+    <h1>Имя клиента: {{name}}</h1>
+    <ul class="col-xs-12 col-sm-6 col-lg-4 item" ng-repeat="flatx in flatexes | filter:filter" ng-show="name==flatx.client.name">
+        <li>Номер квартиры (ID):{{flatx.id}}</li>
+        <ul ng-controllet="NameCtrl">
+            <li>Номер дома: {{flatx.building}}</li>
+            <li>Площадь квартиры:{{flatx.area}}</li>
+            <li>Возраст клиента:{{flatx.client.age}}</li>
+        </ul>
+    </ul>
+</table>
+<p ng><a class="btn btn-default" onclick="history.back()"; role="button">&laquo Вернуться назад</a></p>
